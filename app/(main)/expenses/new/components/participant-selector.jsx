@@ -2,12 +2,12 @@
 
 import { useState } from "react";
 import { useUser } from "@clerk/nextjs";
-import { useConvexQuery } from "@/hooks/use-convex-query";
-import { api } from "@/convex/_generated/api";
-import { Button } from "@/components/ui/button";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { useConvexQuery } from "../../../../../hooks/use-convex-query";
+import { api } from "../../../../../convex/_generated/api";
+import { Button } from "../../../../../components/ui/button";
+import { Avatar, AvatarFallback, AvatarImage } from "../../../../../components/ui/avatar";
 import { X, UserPlus } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
+import { Badge } from "../../../../../components/ui/badge";
 import {
   Command,
   CommandEmpty,
@@ -15,12 +15,12 @@ import {
   CommandInput,
   CommandItem,
   CommandList,
-} from "@/components/ui/command";
+} from "../../../../../components/ui/command";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover";
+} from "../../../../../components/ui/popover";
 
 export function ParticipantSelector({ participants, onParticipantsChange }) {
   const { data: currentUser } = useConvexQuery(api.users.getCurrentUser);

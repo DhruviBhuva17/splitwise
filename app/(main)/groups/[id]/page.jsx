@@ -3,17 +3,17 @@
 import { useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
-import { api } from "@/convex/_generated/api";
-import { useConvexQuery } from "@/hooks/use-convex-query";
+import { api } from "../../../../convex/_generated/api";
+import { useConvexQuery } from "../../../../hooks/use-convex-query";
 import { BarLoader } from "react-spinners";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Button } from "../../../../components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "../../../../components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../../../../components/ui/tabs";
 import { PlusCircle, ArrowLeftRight, ArrowLeft, Users } from "lucide-react";
-import { ExpenseList } from "@/components/expense-list";
-import { SettlementList } from "@/components/settlement-list";
-import { GroupBalances } from "@/components/group-balances";
-import { GroupMembers } from "@/components/group-members";
+import { ExpenseList } from "../../../../components/expense-list";
+import { SettlementList } from "../../../../components/settlement-list";
+import { GroupBalances } from "../../../../components/group-balances";
+import { GroupMembers } from "../../../../components/group-members";
 
 export default function GroupExpensesPage() {
   const params = useParams();

@@ -1,7 +1,7 @@
 "use client";
 
-import { api } from "@/convex/_generated/api";
-import { useConvexQuery } from "@/hooks/use-convex-query";
+import { api } from "../../../convex/_generated/api";
+import { useConvexQuery } from "../../../hooks/use-convex-query";
 import { BarLoader } from "react-spinners";
 import {
   Card,
@@ -9,8 +9,8 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+} from "../../../components/ui/card";
+import { Button } from "../../../components/ui/button";
 import { PlusCircle, Users, CreditCard, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { ExpenseSummary } from "./components/expense-summary";

@@ -4,27 +4,27 @@ import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { api } from "@/convex/_generated/api";
-import { useConvexMutation, useConvexQuery } from "@/hooks/use-convex-query";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Label } from "@/components/ui/label";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { api } from "../../../../../convex/_generated/api";
+import { useConvexMutation, useConvexQuery } from "../../../../../hooks/use-convex-query";
+import { Input } from "../../../../../components/ui/input";
+import { Button } from "../../../../../components/ui/button";
+import { Label } from "../../../../../components/ui/label";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../../../../../components/ui/tabs";
 import { toast } from "sonner";
 import { ParticipantSelector } from "./participant-selector";
 import { GroupSelector } from "./group-selector";
 import { CategorySelector } from "./category-selector";
 import { SplitSelector } from "./split-selector";
-import { Calendar } from "@/components/ui/calendar";
+import { Calendar } from "../../../../../components/ui/calendar";
 import { format } from "date-fns";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover";
-import { cn } from "@/lib/utils";
+} from "../../../../../components/ui/popover";
+import { cn } from "../../../../../lib/utils";
 import { CalendarIcon } from "lucide-react";
-import { getAllCategories } from "@/lib/expense-categories";
+import { getAllCategories } from "../../../../../lib/expense-categories";
 
 // Form schema validation
 const expenseSchema = z.object({

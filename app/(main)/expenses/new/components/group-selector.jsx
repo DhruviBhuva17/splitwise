@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useConvexQuery } from "@/hooks/use-convex-query";
-import { api } from "@/convex/_generated/api";
+import { useConvexQuery } from "../../../../../hooks/use-convex-query";
+import { api } from "../../../../../convex/_generated/api";
 import { BarLoader } from "react-spinners";
 import { Users } from "lucide-react";
 import {
@@ -11,7 +11,7 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
+} from "../../../../../components/ui/select";
 
 export function GroupSelector({ onChange }) {
   const [selectedGroupId, setSelectedGroupId] = useState("");

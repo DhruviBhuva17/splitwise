@@ -1,15 +1,15 @@
 "use client";
 
-import { useConvexQuery, useConvexMutation } from "@/hooks/use-convex-query";
-import { api } from "@/convex/_generated/api";
+import { useConvexQuery, useConvexMutation } from "../hooks/use-convex-query";
+import { api } from "../convex/_generated/api";
 import { format } from "date-fns";
-import { Card, CardContent } from "@/components/ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
-import { getCategoryById } from "@/lib/expense-categories";
-import { getCategoryIcon } from "@/lib/expense-categories";
+import { Card, CardContent } from "../components/ui/card";
+import { Avatar, AvatarFallback, AvatarImage } from "../components/ui/avatar";
+import { Badge } from "../components/ui/badge";
+import { getCategoryById } from "../lib/expense-categories";
+import { getCategoryIcon } from "../lib/expense-categories";
 import { Trash2 } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "../components/ui/button";
 import { toast } from "sonner";
 
 export function ExpenseList({

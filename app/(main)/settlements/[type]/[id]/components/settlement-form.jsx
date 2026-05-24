@@ -4,14 +4,14 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { api } from "@/convex/_generated/api";
-import { useConvexMutation, useConvexQuery } from "@/hooks/use-convex-query";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { api } from "../../../../../../convex/_generated/api";
+import { useConvexMutation, useConvexQuery } from "../../../../../../hooks/use-convex-query";
+import { Input } from "../../../../../../components/ui/input";
+import { Button } from "../../../../../../components/ui/button";
+import { Label } from "../../../../../../components/ui/label";
+import { Textarea } from "../../../../../../components/ui/textarea";
+import { RadioGroup, RadioGroupItem } from "../../../../../../components/ui/radio-group";
+import { Avatar, AvatarFallback, AvatarImage } from "../../../../../../components/ui/avatar";
 import { toast } from "sonner";
 
 // Form schema validation

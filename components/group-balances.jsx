@@ -1,8 +1,8 @@
 "use client";
 
-import { useConvexQuery } from "@/hooks/use-convex-query";
-import { api } from "@/convex/_generated/api";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { useConvexQuery } from "../hooks/use-convex-query";
+import { api } from "../convex/_generated/api";
+import { Avatar, AvatarFallback, AvatarImage } from "../components/ui/avatar";
 import { ArrowUpCircle, ArrowDownCircle } from "lucide-react";
 
 /**

@@ -2,9 +2,9 @@
 
 import { useState, useEffect } from "react";
 import { useUser } from "@clerk/nextjs";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Input } from "@/components/ui/input";
-import { Slider } from "@/components/ui/slider";
+import { Avatar, AvatarFallback, AvatarImage } from "../../../../../components/ui/avatar";
+import { Input } from "../../../../../components/ui/input";
+import { Slider } from "../../../../../components/ui/slider";
 
 export function SplitSelector({
   type,

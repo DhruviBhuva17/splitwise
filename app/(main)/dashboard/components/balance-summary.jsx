@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "../../../../components/ui/avatar";
 import { ArrowUpCircle, ArrowDownCircle } from "lucide-react";
 
 export function BalanceSummary({ balances }) {
